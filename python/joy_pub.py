@@ -48,5 +48,5 @@ if __name__ == '__main__':
         msg.axes = [j.get_axis(i) for i in xrange(num_axes)]
         msg.buttons = [j.get_button(i) for i in xrange(num_buttons)]
 
-        lc.publish('joy', msg.encode())
+        lc.publish('/002/joy', msg.encode())
         time.sleep(.05)

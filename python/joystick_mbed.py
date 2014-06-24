@@ -12,16 +12,17 @@ import lcm
 from fearing import xbox_joystick_state
 from fearing import header
 from fearing import carrier_state
+from fearing import co2
 
 class ZC_Carrier:
-    def __init__(self, an20, a1, a2, b2, b1, co2, id, lcm):
+    def __init__(self, an20, a1, a2, b2, b1, co2_var, id, lcm):
         self.mbed_a20=an20
         self.mbed_a1=a1
         self.mbed_a2=a2
         self.mbed_b2=b2
         self.mbed_b1=b1
 
-        self.mbed_co2 = co2
+        self.mbed_co2 = co2_var
 
         self.id=id
         self.lcm=lcm
@@ -30,20 +31,15 @@ class ZC_Carrier:
         
         self.health_thread=threading.Thread(target=self._health_loop)
         self.health_thread.daemon=True
+
+        self.co2_thread=threading.Thread(target=self._co2_loop)
+        self.co2_thread.daemon=True
         
         
     def start(self):
         self.health_thread.start()
+        self.co2_thread.start()
     
-    def read_co2(self):
-        return self.mbed_co2.read()
-    
-    def _co2_loop(self):
-        co2 = 0
-        topic = self.id + '/co2'
-     
-        while True:
-      
     def _left_cmd(self, speed):
         if speed >= 0:
             self.mbed_a1.write(1.0-speed)
@@ -66,6 +62,32 @@ class ZC_Carrier:
         self._right_cmd(r)
         self.mblock.release()
         
+    def read_co2(self):
+        return int(self.mbed_co2.read())
+    
+    def _co2_loop(self):
+        co2_val = 0
+        topic = self.id + '/co2'
+        msg = co2()
+        msg.header = header()
+        msg.header.seq = 0
+
+        while True:
+            msg.header.seq += 1
+            msg.header.time=time.time()
+
+            self.mblock.acquire()
+            co2_val = self.read_co2()
+            self.mblock.release()
+
+            msg.value = co2_val
+            
+            try:
+                self.lcm.publish(topic, msg.encode())
+            except IOError, e:
+                print e
+            time.sleep(1.0)
+
     def _health_loop(self):
         volt=0
         
@@ -95,6 +117,8 @@ class ZC_Carrier:
 
 if __name__ == '__main__':
     id=zc_id.get_id()
+    if id is None:
+      id = '/999'
     
     dev='/dev/ttyACM0'
     mb=SerialRPC(dev, 115200)
@@ -109,7 +133,7 @@ if __name__ == '__main__':
     
     a=AnalogIn(mb, p20)
    
-    co2 = RPCVariable(mp, "co2")
+    co2_var = RPCVariable(mb, "co2")
  
     lc = None
     while lc is None:
@@ -121,7 +145,7 @@ if __name__ == '__main__':
     print("LCM connected properly!")
     print("running...")
     
-    zc=ZC_Carrier(a,a1,a2,b2,b1, co2, id, lc)
+    zc=ZC_Carrier(a,a1,a2,b2,b1, co2_var, id, lc)
     
     def handle_joy(chan, data):
         msg = xbox_joystick_state.decode(data)

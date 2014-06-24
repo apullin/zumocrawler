@@ -1,0 +1,6 @@
+package fearing;
+
+struct co2 {
+    header header;
+    int16_t value;
+}

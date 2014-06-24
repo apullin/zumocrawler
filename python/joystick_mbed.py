@@ -14,12 +14,15 @@ from fearing import header
 from fearing import carrier_state
 
 class ZC_Carrier:
-    def __init__(self, an20, a1, a2, b2, b1, id, lcm):
+    def __init__(self, an20, a1, a2, b2, b1, co2, id, lcm):
         self.mbed_a20=an20
         self.mbed_a1=a1
         self.mbed_a2=a2
         self.mbed_b2=b2
         self.mbed_b1=b1
+
+        self.mbed_co2 = co2
+
         self.id=id
         self.lcm=lcm
         
@@ -31,7 +34,16 @@ class ZC_Carrier:
         
     def start(self):
         self.health_thread.start()
-        
+    
+    def read_co2(self):
+        return self.mbed_co2.read()
+    
+    def _co2_loop(self):
+        co2 = 0
+        topic = self.id + '/co2'
+     
+        while True:
+      
     def _left_cmd(self, speed):
         if speed >= 0:
             self.mbed_a1.write(1.0-speed)
@@ -96,7 +108,9 @@ if __name__ == '__main__':
     b1=PwmOut(mb, p24)
     
     a=AnalogIn(mb, p20)
-    
+   
+    co2 = RPCVariable(mp, "co2")
+ 
     lc = None
     while lc is None:
         try:
@@ -107,7 +121,7 @@ if __name__ == '__main__':
     print("LCM connected properly!")
     print("running...")
     
-    zc=ZC_Carrier(a,a1,a2,b2,b1,id, lc)
+    zc=ZC_Carrier(a,a1,a2,b2,b1, co2, id, lc)
     
     def handle_joy(chan, data):
         msg = xbox_joystick_state.decode(data)
@@ -115,7 +129,7 @@ if __name__ == '__main__':
         zc.cmd(l,r)
     
     zc.cmd(0,0)
-    lc.subscribe('joy', handle_joy)
+    lc.subscribe(id + '/joy', handle_joy)
     zc.start()
     
     while True:

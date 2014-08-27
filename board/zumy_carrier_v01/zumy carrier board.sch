@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1095,7 +1095,7 @@ STEP-DOWN</text>
 <text x="10.16" y="8.255" size="1.143" layer="51" font="vector" ratio="16" align="bottom-right">TD-</text>
 <text x="10.16" y="5.715" size="1.143" layer="51" font="vector" ratio="16" align="bottom-right">TD+</text>
 <text x="10.16" y="3.175" size="1.143" layer="51" font="vector" ratio="16" align="bottom-right">D-</text>
-<text x="10.16" y="0.635" size="1.143" layer="51" font="vector" ratio="16" align="bottom-right">D-</text>
+<text x="10.16" y="0.635" size="1.143" layer="51" font="vector" ratio="16" align="bottom-right">D+</text>
 <text x="10.16" y="-1.905" size="1.143" layer="51" font="vector" ratio="16" align="bottom-right">P30</text>
 <text x="10.16" y="-4.445" size="1.143" layer="51" font="vector" ratio="16" align="bottom-right">P29</text>
 <text x="10.16" y="-6.985" size="1.143" layer="51" font="vector" ratio="16" align="bottom-right">/P28</text>
@@ -1109,17 +1109,21 @@ STEP-DOWN</text>
 <text x="3.4925" y="17.30375" size="1.778" layer="51" font="vector" ratio="15" rot="R180">MBED</text>
 <text x="-6.35" y="-7.14375" size="0.8128" layer="51" font="vector" ratio="16">TX/SCK</text>
 <text x="6.19125" y="-6.6675" size="0.8128" layer="51" font="vector" ratio="16" align="bottom-right">SDA/TX</text>
+<wire x1="-12.7" y1="26.67" x2="12.7" y2="26.67" width="0.127" layer="21"/>
+<wire x1="12.7" y1="26.67" x2="12.7" y2="-26.67" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-26.67" x2="-12.7" y2="-26.67" width="0.127" layer="21"/>
+<wire x1="-12.7" y1="-26.67" x2="-12.7" y2="26.67" width="0.127" layer="21"/>
 </package>
 <package name="ODOIRD_PWR">
-<wire x1="-2.921" y1="3.302" x2="-2.921" y2="-3.302" width="0.127" layer="21"/>
-<wire x1="8.8265" y1="3.302" x2="8.8265" y2="-3.302" width="0.127" layer="21"/>
-<wire x1="8.8265" y1="3.302" x2="-2.921" y2="3.302" width="0.127" layer="21"/>
-<pad name="GND" x="0" y="0" drill="3.2" diameter="5.08" shape="square"/>
-<pad name="PWR" x="5.842" y="0" drill="3.2" diameter="5.08"/>
-<text x="-4.064" y="-1.27" size="1.27" layer="21" font="vector" ratio="12" rot="R90">GND</text>
-<text x="10.922" y="-1.524" size="1.27" layer="21" font="vector" ratio="12" rot="R90">+5V</text>
-<wire x1="-2.921" y1="-3.302" x2="8.8265" y2="-3.302" width="0.127" layer="21"/>
-<text x="-2.8702" y="3.6068" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<wire x1="-3.8735" y1="2.3495" x2="-3.8735" y2="-2.3495" width="0.127" layer="21"/>
+<wire x1="8.509" y1="2.3495" x2="8.509" y2="-2.3495" width="0.127" layer="21"/>
+<wire x1="8.509" y1="2.3495" x2="-3.8735" y2="2.3495" width="0.127" layer="21"/>
+<pad name="GND" x="0" y="0" drill="1.6" diameter="3.81" shape="square"/>
+<pad name="PWR" x="4.572" y="0" drill="1.6" diameter="3.81"/>
+<text x="-2.159" y="-1.5875" size="1.27" layer="21" font="vector" ratio="12" rot="R90">GND</text>
+<text x="8.0645" y="-1.524" size="1.27" layer="21" font="vector" ratio="12" rot="R90">+5V</text>
+<wire x1="-3.8735" y1="-2.3495" x2="8.509" y2="-2.3495" width="0.127" layer="21"/>
+<text x="-0.9652" y="2.9718" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.8702" y="5.3848" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 <package name="500SSP1S1M6QEA_SWITCH">

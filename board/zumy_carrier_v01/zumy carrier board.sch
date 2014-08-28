@@ -10919,12 +10919,12 @@ type 0309, grid 2.5 mm</description>
 <wire x1="160.02" y1="144.78" x2="175.26" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP5" gate="A" pin="1"/>
-<wire x1="167.64" y1="58.42" x2="180.34" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="58.42" x2="193.04" y2="58.42" width="0.1524" layer="91"/>
-<junction x="180.34" y="58.42"/>
-<label x="193.802" y="57.912" size="1.778" layer="95"/>
-<pinref part="KIT1" gate="KIT" pin="P21"/>
+<pinref part="JP5" gate="A" pin="4"/>
+<wire x1="167.64" y1="66.04" x2="180.34" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="KIT1" gate="KIT" pin="P24"/>
+<wire x1="180.34" y1="66.04" x2="190.5" y2="66.04" width="0.1524" layer="91"/>
+<label x="191.262" y="65.532" size="1.778" layer="95"/>
+<junction x="180.34" y="66.04"/>
 </segment>
 </net>
 <net name="BIN2" class="0">
@@ -10934,12 +10934,12 @@ type 0309, grid 2.5 mm</description>
 <wire x1="160.02" y1="142.24" x2="175.26" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP5" gate="A" pin="2"/>
-<wire x1="167.64" y1="60.96" x2="180.34" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="60.96" x2="193.04" y2="60.96" width="0.1524" layer="91"/>
-<junction x="180.34" y="60.96"/>
-<label x="193.548" y="60.452" size="1.778" layer="95"/>
-<pinref part="KIT1" gate="KIT" pin="P22"/>
+<pinref part="JP5" gate="A" pin="3"/>
+<wire x1="167.64" y1="63.5" x2="180.34" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="KIT1" gate="KIT" pin="P23"/>
+<wire x1="180.34" y1="63.5" x2="190.5" y2="63.5" width="0.1524" layer="91"/>
+<label x="191.008" y="62.992" size="1.778" layer="95"/>
+<junction x="180.34" y="63.5"/>
 </segment>
 </net>
 <net name="AIN2" class="0">
@@ -10949,12 +10949,12 @@ type 0309, grid 2.5 mm</description>
 <wire x1="160.02" y1="139.7" x2="175.26" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP5" gate="A" pin="3"/>
-<wire x1="167.64" y1="63.5" x2="180.34" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="63.5" x2="193.04" y2="63.5" width="0.1524" layer="91"/>
-<junction x="180.34" y="63.5"/>
-<label x="193.802" y="62.738" size="1.778" layer="95"/>
-<pinref part="KIT1" gate="KIT" pin="P23"/>
+<pinref part="JP5" gate="A" pin="2"/>
+<wire x1="167.64" y1="60.96" x2="180.34" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="KIT1" gate="KIT" pin="P22"/>
+<wire x1="180.34" y1="60.96" x2="190.5" y2="60.96" width="0.1524" layer="91"/>
+<label x="191.262" y="60.198" size="1.778" layer="95"/>
+<junction x="180.34" y="60.96"/>
 </segment>
 </net>
 <net name="AIN1" class="0">
@@ -10964,12 +10964,12 @@ type 0309, grid 2.5 mm</description>
 <wire x1="160.02" y1="137.16" x2="175.26" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP5" gate="A" pin="4"/>
-<wire x1="167.64" y1="66.04" x2="180.34" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="66.04" x2="193.04" y2="66.04" width="0.1524" layer="91"/>
-<junction x="180.34" y="66.04"/>
-<label x="194.056" y="65.532" size="1.778" layer="95"/>
-<pinref part="KIT1" gate="KIT" pin="P24"/>
+<pinref part="JP5" gate="A" pin="1"/>
+<wire x1="167.64" y1="58.42" x2="180.34" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="KIT1" gate="KIT" pin="P21"/>
+<wire x1="180.34" y1="58.42" x2="190.5" y2="58.42" width="0.1524" layer="91"/>
+<label x="191.516" y="57.912" size="1.778" layer="95"/>
+<junction x="180.34" y="58.42"/>
 </segment>
 </net>
 <net name="N$55" class="0">

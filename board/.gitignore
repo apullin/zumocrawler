@@ -1,0 +1,9 @@
+*.b#*
+*.s#*
+*.l#*
+doc/*
+*/gerber/
+*/dru/
+*/cam/
+*/gerb/
+*/panel/

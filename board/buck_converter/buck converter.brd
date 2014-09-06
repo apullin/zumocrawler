@@ -139,9 +139,9 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="28.301" y2="0" width="0" layer="20"/>
-<wire x1="28.301" y1="0" x2="28.301" y2="14.529" width="0" layer="20"/>
-<wire x1="28.301" y1="14.529" x2="0" y2="14.529" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="26.142" y2="0" width="0" layer="20"/>
+<wire x1="26.142" y1="0" x2="26.142" y2="14.529" width="0" layer="20"/>
+<wire x1="26.142" y1="14.529" x2="0" y2="14.529" width="0" layer="20"/>
 <wire x1="0" y1="14.529" x2="0" y2="0" width="0" layer="20"/>
 </plain>
 <libraries>
@@ -268,6 +268,55 @@ chip</description>
 <wire x1="-0.9398" y1="0.5588" x2="-0.9398" y2="-0.5588" width="0.1524" layer="21"/>
 <wire x1="-0.9398" y1="-0.5588" x2="0.9398" y2="-0.5588" width="0.1524" layer="21"/>
 <wire x1="0.9398" y1="-0.5588" x2="0.9398" y2="0.5588" width="0.1524" layer="21"/>
+</package>
+</packages>
+</library>
+<library name="SparkFun-Connectors">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find connectors and sockets- basically anything that can be plugged into or onto.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="1X04">
+<wire x1="6.985" y1="1.27" x2="8.255" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="8.255" y1="1.27" x2="8.89" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="8.89" y1="-0.635" x2="8.255" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="4.445" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="5.715" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="-0.635" x2="5.715" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="-1.27" x2="4.445" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="6.985" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="-0.635" x2="6.985" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="8.255" y1="-1.27" x2="6.985" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="8.89" y1="0.635" x2="8.89" y2="-0.635" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" shape="square" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="4" x="7.62" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
 </package>
 </packages>
 </library>
@@ -458,13 +507,14 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="IC1" library="zumy" package="TPS84621" value="TPS84621" x="15.24" y="7.366"/>
-<element name="C_OUT2" library="biomimetic" package="1210" value="" x="5.715" y="11.176" rot="R90"/>
-<element name="C_OUT1" library="biomimetic" package="1210" value="" x="2.794" y="11.176" rot="R90"/>
-<element name="AGND_TO_PGND" library="biomimetic" package="0402-RES" value="0" x="12.192" y="8.255" rot="R180"/>
-<element name="C_IN1" library="biomimetic" package="1210" value="" x="3.81" y="6.223" rot="R270"/>
-<element name="C_IN2" library="biomimetic" package="1210" value="" x="6.985" y="6.223" rot="R270"/>
-<element name="RSET" library="biomimetic" package="0402-RES" value="196" x="6.858" y="2.54" rot="R90"/>
-<element name="RRT" library="biomimetic" package="0402-RES" value="86.6K" x="13.081" y="12.192" rot="R180"/>
+<element name="C_OUT2" library="biomimetic" package="1210" value="" x="7.112" y="11.049" rot="R270"/>
+<element name="C_OUT1" library="biomimetic" package="1210" value="" x="4.064" y="11.049" rot="R270"/>
+<element name="AGND_TO_PGND" library="biomimetic" package="0402-RES" value="0" x="11.811" y="8.255" rot="R180"/>
+<element name="C_IN1" library="biomimetic" package="1210" value="" x="4.064" y="6.223" rot="R90"/>
+<element name="C_IN2" library="biomimetic" package="1210" value="" x="7.112" y="6.35" rot="R90"/>
+<element name="RSET" library="biomimetic" package="0402-RES" value="196" x="8.255" y="2.794" rot="R90"/>
+<element name="RRT" library="biomimetic" package="0402-RES" value="86.6K" x="13.081" y="11.557" rot="R180"/>
+<element name="JP1" library="SparkFun-Connectors" package="1X04" value="" x="-1.524" y="2.921" rot="R90"/>
 </elements>
 <signals>
 <signal name="VOUT">
@@ -489,10 +539,27 @@ design rules under a new name.</description>
 <vertex x="22.86" y="8.509"/>
 <vertex x="22.86" y="11.938"/>
 </polygon>
+<contactref element="JP1" pad="3"/>
+<polygon width="0" layer="1" thermals="no">
+<vertex x="18.669" y="10.922"/>
+<vertex x="14.478" y="10.922"/>
+<vertex x="14.478" y="12.446"/>
+<vertex x="8.509" y="12.446"/>
+<vertex x="8.509" y="11.938"/>
+<vertex x="2.921" y="11.938"/>
+<vertex x="2.921" y="13.589"/>
+<vertex x="22.86" y="13.589"/>
+<vertex x="22.86" y="10.922"/>
+</polygon>
 <wire x1="18.94" y1="10.166" x2="18.04" y2="10.166" width="0" layer="19" extent="1-1"/>
-<wire x1="9.715" y1="3.041" x2="18.04" y2="10.166" width="0" layer="19" extent="1-1"/>
-<wire x1="5.715" y1="9.576" x2="9.715" y2="3.041" width="0" layer="19" extent="1-1"/>
-<wire x1="2.794" y1="9.576" x2="5.715" y2="9.576" width="0" layer="19" extent="1-1"/>
+<wire x1="-1.524" y1="8.001" x2="4.064" y2="12.649" width="0" layer="19" extent="1-1"/>
+<wire x1="9.715" y1="3.041" x2="7.112" y2="12.649" width="0" layer="19" extent="1-1"/>
+<polygon width="0" layer="1" thermals="no">
+<vertex x="2.921" y="12.446"/>
+<vertex x="2.921" y="11.049"/>
+<vertex x="11.43" y="11.049"/>
+<vertex x="11.43" y="12.446"/>
+</polygon>
 </signal>
 <signal name="GND">
 <contactref element="C_OUT1" pad="2"/>
@@ -503,13 +570,15 @@ design rules under a new name.</description>
 <contactref element="IC1" pad="36"/>
 <contactref element="C_IN1" pad="2"/>
 <contactref element="C_IN2" pad="2"/>
+<contactref element="JP1" pad="2"/>
 <wire x1="10.19" y1="9.841" x2="11.74" y2="10.166" width="0" layer="19" extent="1-1"/>
 <wire x1="9.715" y1="8.441" x2="10.19" y2="9.841" width="0" layer="19" extent="1-1"/>
-<wire x1="11.7094" y1="8.255" x2="11.74" y2="10.166" width="0" layer="19" extent="1-1"/>
-<wire x1="6.985" y1="4.623" x2="9.715" y2="8.441" width="0" layer="19" extent="1-1"/>
-<wire x1="3.81" y1="4.623" x2="6.985" y2="4.623" width="0" layer="19" extent="1-1"/>
-<wire x1="5.715" y1="12.776" x2="10.19" y2="9.841" width="0" layer="19" extent="1-1"/>
-<wire x1="2.794" y1="12.776" x2="5.715" y2="12.776" width="0" layer="19" extent="1-1"/>
+<wire x1="11.3284" y1="8.255" x2="9.715" y2="8.441" width="0" layer="19" extent="1-1"/>
+<wire x1="7.112" y1="7.95" x2="9.715" y2="8.441" width="0" layer="19" extent="1-1"/>
+<wire x1="7.112" y1="9.449" x2="7.112" y2="7.95" width="0" layer="19" extent="1-1"/>
+<wire x1="4.064" y1="9.449" x2="7.112" y2="9.449" width="0" layer="19" extent="1-1"/>
+<wire x1="4.064" y1="7.823" x2="4.064" y2="9.449" width="0" layer="19" extent="1-1"/>
+<wire x1="-1.524" y1="5.461" x2="4.064" y2="7.823" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="AGND">
 <contactref element="IC1" pad="34"/>
@@ -521,18 +590,18 @@ design rules under a new name.</description>
 <contactref element="IC1" pad="7"/>
 <contactref element="RSET" pad="1"/>
 <contactref element="RRT" pad="1"/>
-<wire x1="13.5636" y1="12.192" x2="13.54" y2="10.166" width="0" layer="19" extent="1-1"/>
-<wire x1="12.6746" y1="8.255" x2="13.54" y2="10.166" width="0" layer="19" extent="1-1"/>
-<wire x1="13.54" y1="5.741" x2="12.6746" y2="8.255" width="0" layer="19" extent="1-1"/>
+<wire x1="13.5636" y1="11.557" x2="13.54" y2="10.166" width="0" layer="19" extent="1-1"/>
+<wire x1="12.2936" y1="8.255" x2="13.54" y2="10.166" width="0" layer="19" extent="1-1"/>
+<wire x1="13.54" y1="5.741" x2="12.2936" y2="8.255" width="0" layer="19" extent="1-1"/>
 <wire x1="11.74" y1="1.316" x2="13.54" y2="5.741" width="0" layer="19" extent="1-1"/>
 <wire x1="10.19" y1="1.641" x2="11.74" y2="1.316" width="0" layer="19" extent="1-1"/>
-<wire x1="6.858" y1="2.0574" x2="10.19" y2="1.641" width="0" layer="19" extent="1-1"/>
+<wire x1="8.255" y1="2.3114" x2="10.19" y2="1.641" width="0" layer="19" extent="1-1"/>
 <wire x1="16.24" y1="1.316" x2="11.74" y2="1.316" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="IC1" pad="43"/>
 <contactref element="RSET" pad="2"/>
-<wire x1="6.858" y1="3.0226" x2="9.715" y2="3.941" width="0" layer="19" extent="1-1"/>
+<wire x1="8.255" y1="3.2766" x2="9.715" y2="3.941" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VIN">
 <contactref element="IC1" pad="42"/>
@@ -541,16 +610,18 @@ design rules under a new name.</description>
 <contactref element="IC1" pad="40"/>
 <contactref element="C_IN1" pad="1"/>
 <contactref element="C_IN2" pad="1"/>
+<contactref element="JP1" pad="1"/>
 <wire x1="9.715" y1="6.641" x2="9.715" y2="7.541" width="0" layer="19" extent="1-1"/>
 <wire x1="9.715" y1="5.741" x2="9.715" y2="6.641" width="0" layer="19" extent="1-1"/>
 <wire x1="9.715" y1="4.841" x2="9.715" y2="5.741" width="0" layer="19" extent="1-1"/>
-<wire x1="6.985" y1="7.823" x2="9.715" y2="7.541" width="0" layer="19" extent="1-1"/>
-<wire x1="3.81" y1="7.823" x2="6.985" y2="7.823" width="0" layer="19" extent="1-1"/>
+<wire x1="7.112" y1="4.75" x2="9.715" y2="4.841" width="0" layer="19" extent="1-1"/>
+<wire x1="4.064" y1="4.623" x2="7.112" y2="4.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-1.524" y1="2.921" x2="4.064" y2="4.623" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="IC1" pad="35"/>
 <contactref element="RRT" pad="2"/>
-<wire x1="12.5984" y1="12.192" x2="12.64" y2="10.166" width="0" layer="19" extent="1-1"/>
+<wire x1="12.5984" y1="11.557" x2="12.64" y2="10.166" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PH">
 <polygon width="0" layer="1" orphans="yes" thermals="no">
@@ -558,8 +629,8 @@ design rules under a new name.</description>
 <vertex x="25.019" y="4.318"/>
 <vertex x="25.019" y="3.683"/>
 <vertex x="22.86" y="3.683"/>
-<vertex x="22.86" y="0.635"/>
-<vertex x="18.542" y="0.635"/>
+<vertex x="22.86" y="0.381"/>
+<vertex x="18.542" y="0.381"/>
 </polygon>
 <contactref element="IC1" pad="10"/>
 <contactref element="IC1" pad="17"/>
@@ -568,6 +639,11 @@ design rules under a new name.</description>
 <contactref element="IC1" pad="46"/>
 <contactref element="IC1" pad="11"/>
 <contactref element="IC1" pad="14"/>
+</signal>
+<signal name="PWRGD">
+<contactref element="IC1" pad="33"/>
+<contactref element="JP1" pad="4"/>
+<wire x1="-1.524" y1="10.541" x2="14.44" y2="10.166" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

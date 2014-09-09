@@ -7467,7 +7467,7 @@ MODULE</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SN74AUP2G17">
+<deviceset name="SN74AUP2G17" prefix="IC">
 <gates>
 <gate name="G$1" symbol="SCHMITT_TRIGGER" x="0" y="0"/>
 </gates>

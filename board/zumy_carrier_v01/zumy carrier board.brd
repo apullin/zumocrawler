@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mil" altunit="mil"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -148,12 +148,12 @@
 <wire x1="53.975" y1="85.09" x2="53.975" y2="3.81" width="0.4064" layer="20"/>
 <wire x1="53.975" y1="3.81" x2="50.165" y2="0" width="0.4064" layer="20" curve="-90"/>
 <wire x1="50.165" y1="0" x2="3.81" y2="0" width="0.4064" layer="20"/>
-<text x="29.083" y="3.302" size="1.9304" layer="51" font="vector" ratio="15" rot="SR180">Zumy v0.1</text>
-<text x="29.083" y="5.08" size="0.8128" layer="51" font="vector" ratio="12" rot="SR180">Biomimetic Millisystems Lab</text>
-<text x="36.909375" y="3.175" size="1.016" layer="51" font="vector" ratio="12" rot="SR180" align="center">A. Pullin
+<text x="32.258" y="3.175" size="1.9304" layer="51" font="vector" ratio="15" rot="SR180">Zumy v0.1</text>
+<text x="32.131" y="5.08" size="1.016" layer="51" font="vector" ratio="15" rot="SR180">Biomimetic Millisystems Lab</text>
+<text x="39.195375" y="3.048" size="1.016" layer="51" font="vector" ratio="15" rot="SR180" align="center">A. Pullin
 A.J. Chen
 2014</text>
-<text x="13.716" y="3.175" size="0.8128" layer="51" font="vector" ratio="12" rot="SR180">Rev D</text>
+<text x="16.51" y="3.048" size="1.27" layer="51" font="vector" ratio="15" rot="SR180">Rev D</text>
 <text x="1.30301875" y="84.775040625" size="0.8128" layer="1" font="vector" ratio="15" rot="SR270">Sept 15th,2014</text>
 <text x="4.772025" y="6.8532375" size="0.8128" layer="21" font="vector" ratio="15" rot="R180">ODROID
 Pwr</text>

@@ -46,3 +46,8 @@ fearing/*
 
 # spyder project
 .spyderproject
+
+# Eagle temp files
+*.b#*
+*.s#*
+*.l#*

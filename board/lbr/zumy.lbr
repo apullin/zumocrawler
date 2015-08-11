@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="25" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -46,8 +46,8 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
@@ -87,6 +87,7 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="no" active="yes"/>
+<layer number="114" name="DXF_IMPORT" color="13" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
@@ -1207,14 +1208,14 @@ MODULE</text>
 <wire x1="-12.7" y1="-26.67" x2="-12.7" y2="26.67" width="0.127" layer="21"/>
 </package>
 <package name="ODOIRD_PWR">
-<wire x1="-3.8735" y1="2.3495" x2="-3.8735" y2="-2.3495" width="0.127" layer="21"/>
-<wire x1="8.509" y1="2.3495" x2="8.509" y2="-2.3495" width="0.127" layer="21"/>
-<wire x1="8.509" y1="2.3495" x2="-3.8735" y2="2.3495" width="0.127" layer="21"/>
-<pad name="GND" x="0" y="0" drill="1.6" diameter="3.81" shape="square"/>
-<pad name="PWR" x="4.572" y="0" drill="1.6" diameter="3.81"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="5.08" y1="1.27" x2="5.08" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="5.08" y1="1.27" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
+<pad name="GND" x="0" y="0" drill="1.4" shape="square"/>
+<pad name="PWR" x="3.81" y="0" drill="1.4"/>
 <text x="-2.159" y="-1.5875" size="1.27" layer="21" font="vector" ratio="12" rot="R90">GND</text>
-<text x="8.0645" y="-1.524" size="1.27" layer="21" font="vector" ratio="12" rot="R90">+5V</text>
-<wire x1="-3.8735" y1="-2.3495" x2="8.509" y2="-2.3495" width="0.127" layer="21"/>
+<text x="6.7945" y="-1.524" size="1.27" layer="21" font="vector" ratio="12" rot="R90">+5V</text>
+<wire x1="-1.27" y1="-1.27" x2="5.08" y2="-1.27" width="0.127" layer="21"/>
 <text x="-0.9652" y="2.9718" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.8702" y="5.3848" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
@@ -1241,6 +1242,41 @@ MODULE</text>
 <vertex x="-1.3716" y="-2.37568125"/>
 <vertex x="1.3716" y="-2.37568125"/>
 </polygon>
+<hole x="0" y="76" drill="3.3"/>
+<polygon width="0.0254" layer="21">
+<vertex x="2.7432" y="76.02"/>
+<vertex x="1.3716" y="78.39568125"/>
+<vertex x="-1.3716" y="78.39568125"/>
+<vertex x="-2.7432" y="76.02"/>
+<vertex x="-1.3716" y="73.64431875"/>
+<vertex x="1.3716" y="73.64431875"/>
+</polygon>
+<hole x="41" y="0" drill="3.3"/>
+<polygon width="0.0254" layer="21">
+<vertex x="43.7432" y="0"/>
+<vertex x="42.3716" y="2.37568125"/>
+<vertex x="39.6284" y="2.37568125"/>
+<vertex x="38.2568" y="0"/>
+<vertex x="39.6284" y="-2.37568125"/>
+<vertex x="42.3716" y="-2.37568125"/>
+</polygon>
+<hole x="41" y="76" drill="3.3"/>
+<polygon width="0.0254" layer="21">
+<vertex x="43.7432" y="76.02"/>
+<vertex x="42.3716" y="78.39568125"/>
+<vertex x="39.6284" y="78.39568125"/>
+<vertex x="38.2568" y="76.02"/>
+<vertex x="39.6284" y="73.64431875"/>
+<vertex x="42.3716" y="73.64431875"/>
+</polygon>
+<circle x="0" y="76" radius="2.84253125" width="0" layer="39"/>
+<circle x="0" y="76" radius="2.84253125" width="0" layer="40"/>
+<circle x="41" y="76" radius="2.84253125" width="0" layer="40"/>
+<circle x="41" y="76" radius="2.84253125" width="0" layer="39"/>
+<circle x="41" y="0" radius="2.84253125" width="0" layer="39"/>
+<circle x="41" y="0" radius="2.84253125" width="0" layer="40"/>
+<circle x="0" y="0" radius="2.84253125" width="0" layer="40"/>
+<circle x="0" y="0" radius="2.84253125" width="0" layer="39"/>
 </package>
 <package name="SC-70-6">
 <smd name="5" x="0" y="1.1" dx="0.85" dy="0.35" layer="1" rot="R90"/>
@@ -1264,6 +1300,28 @@ MODULE</text>
 <wire x1="20.32" y1="0" x2="20.32" y2="17.78" width="0.127" layer="21"/>
 <wire x1="20.32" y1="17.78" x2="0" y2="17.78" width="0.127" layer="21"/>
 <wire x1="0" y1="17.78" x2="0" y2="0" width="0.127" layer="21"/>
+</package>
+<package name="CHASSIS_STANDOFF">
+<hole x="0" y="0" drill="2.4"/>
+<circle x="0" y="0" radius="2.75" width="0" layer="21"/>
+<circle x="0" y="0" radius="2.75" width="0" layer="22"/>
+<circle x="0" y="0" radius="2.75" width="0" layer="40"/>
+<circle x="0" y="0" radius="2.75" width="0" layer="39"/>
+<hole x="45" y="0" drill="2.4"/>
+<circle x="45" y="0" radius="2.75" width="0" layer="21"/>
+<circle x="45" y="0" radius="2.75" width="0" layer="22"/>
+<circle x="45" y="0" radius="2.75" width="0" layer="40"/>
+<circle x="45" y="0" radius="2.75" width="0" layer="39"/>
+<hole x="15" y="52.5" drill="2.4"/>
+<circle x="15" y="52.5" radius="2.75" width="0" layer="21"/>
+<circle x="15" y="52.5" radius="2.75" width="0" layer="22"/>
+<circle x="15" y="52.5" radius="2.75" width="0" layer="40"/>
+<circle x="15" y="52.5" radius="2.75" width="0" layer="39"/>
+<hole x="30" y="52.5" drill="2.4"/>
+<circle x="30" y="52.5" radius="2.75" width="0" layer="21"/>
+<circle x="30" y="52.5" radius="2.75" width="0" layer="22"/>
+<circle x="30" y="52.5" radius="2.75" width="0" layer="40"/>
+<circle x="30" y="52.5" radius="2.75" width="0" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -7149,11 +7207,11 @@ MODULE</text>
 <text x="-8.382" y="-3.048" size="1.778" layer="94">GND</text>
 </symbol>
 <symbol name="POLOLU_D24V50F5">
-<pin name="EN" x="-2.54" y="12.7" length="short"/>
-<pin name="VIN" x="-2.54" y="10.16" length="short"/>
-<pin name="GND1" x="-2.54" y="7.62" length="short"/>
-<pin name="GND2" x="-2.54" y="5.08" length="short"/>
-<pin name="VOUT" x="-2.54" y="2.54" length="short"/>
+<pin name="EN" x="-2.54" y="12.7" visible="pin" length="short"/>
+<pin name="VIN" x="-2.54" y="10.16" visible="pin" length="short"/>
+<pin name="GND1" x="-2.54" y="7.62" visible="pin" length="short"/>
+<pin name="GND2" x="-2.54" y="5.08" visible="pin" length="short"/>
+<pin name="VOUT" x="-2.54" y="2.54" visible="pin" length="short"/>
 <wire x1="0" y1="0" x2="0" y2="15.24" width="0.254" layer="94"/>
 <wire x1="0" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
 <wire x1="10.16" y1="15.24" x2="10.16" y2="0" width="0.254" layer="94"/>
@@ -7522,6 +7580,17 @@ MODULE</text>
 <connect gate="G$1" pin="VIN" pad="VIN"/>
 <connect gate="G$1" pin="VOUT" pad="VOUT"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CHASSIS_STANDOFF">
+<gates>
+</gates>
+<devices>
+<device name="" package="CHASSIS_STANDOFF">
 <technologies>
 <technology name=""/>
 </technologies>

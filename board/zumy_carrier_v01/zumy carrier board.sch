@@ -385,8 +385,7 @@
 <rectangle x1="11.176" y1="3.556" x2="11.684" y2="4.064" layer="51" rot="R90"/>
 <rectangle x1="11.176" y1="1.016" x2="11.684" y2="1.524" layer="51" rot="R90"/>
 <rectangle x1="11.176" y1="8.636" x2="11.684" y2="9.144" layer="51" rot="R90"/>
-<text x="3.175" y="5.08" size="1.016" layer="21" font="vector" ratio="10">DRV8833
- MODULE</text>
+<text x="8.89" y="5.715" size="1.27" layer="21" font="vector" ratio="18" rot="R90">DRV8833</text>
 <rectangle x1="5.588" y1="2.794" x2="7.366" y2="4.572" layer="21"/>
 <rectangle x1="7.874" y1="2.794" x2="9.652" y2="4.572" layer="21"/>
 <rectangle x1="5.588" y1="0.508" x2="7.366" y2="2.286" layer="21"/>
@@ -562,11 +561,10 @@
 <wire x1="5.08" y1="1.27" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
 <pad name="GND" x="0" y="0" drill="1.4" shape="square"/>
 <pad name="PWR" x="3.81" y="0" drill="1.4"/>
-<text x="-2.159" y="-1.5875" size="1.27" layer="21" font="vector" ratio="12" rot="R90">GND</text>
-<text x="6.7945" y="-1.524" size="1.27" layer="21" font="vector" ratio="12" rot="R90">+5V</text>
 <wire x1="-1.27" y1="-1.27" x2="5.08" y2="-1.27" width="0.127" layer="21"/>
 <text x="-0.9652" y="2.9718" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.8702" y="5.3848" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="5.715" y="-0.635" size="1.27" layer="21" font="vector" ratio="18">+</text>
 </package>
 <package name="500SSP1S1M6QEA_SWITCH">
 <pad name="2" x="0" y="0" drill="1.8542"/>
@@ -591,9 +589,6 @@
 <wire x1="4.191" y1="1.397" x2="-1.651" y2="1.397" width="0.127" layer="21"/>
 <pad name="GND" x="0" y="0" drill="1.27" shape="square"/>
 <pad name="PWR" x="2.54" y="0" drill="1.27"/>
-<text x="0.381" y="-3.81" size="0.8128" layer="21" font="vector" ratio="12" rot="R90">GND</text>
-<text x="1.778" y="-6.477" size="0.8128" layer="21" font="vector" ratio="12" rot="R270" align="bottom-right">VBATT
-4.5-24V</text>
 <wire x1="-1.651" y1="-1.397" x2="4.191" y2="-1.397" width="0.127" layer="21"/>
 <text x="-2.2352" y="2.9718" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.2352" y="4.7498" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
@@ -620,6 +615,7 @@
 <wire x1="20.32" y1="0" x2="20.32" y2="17.78" width="0.127" layer="21"/>
 <wire x1="20.32" y1="17.78" x2="0" y2="17.78" width="0.127" layer="21"/>
 <wire x1="0" y1="17.78" x2="0" y2="0" width="0.127" layer="21"/>
+<text x="1.27" y="13.97" size="1.27" layer="21" font="vector" ratio="18">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -6442,6 +6438,7 @@
 <wire x1="0" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
 <wire x1="10.16" y1="15.24" x2="10.16" y2="0" width="0.254" layer="94"/>
 <wire x1="10.16" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="12.7" y="15.24" size="1.778" layer="94" rot="R270">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -15193,10 +15190,4 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 </sheets>
 </schematic>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>

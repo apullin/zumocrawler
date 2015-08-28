@@ -585,11 +585,11 @@
 </package>
 <package name="BATT_POWER">
 <wire x1="-1.651" y1="1.397" x2="-1.651" y2="-1.397" width="0.127" layer="21"/>
-<wire x1="4.191" y1="1.397" x2="4.191" y2="-1.397" width="0.127" layer="21"/>
-<wire x1="4.191" y1="1.397" x2="-1.651" y2="1.397" width="0.127" layer="21"/>
+<wire x1="5.461" y1="1.397" x2="5.461" y2="-1.397" width="0.127" layer="21"/>
+<wire x1="5.461" y1="1.397" x2="-1.651" y2="1.397" width="0.127" layer="21"/>
 <pad name="GND" x="0" y="0" drill="1.27" shape="square"/>
-<pad name="PWR" x="2.54" y="0" drill="1.27"/>
-<wire x1="-1.651" y1="-1.397" x2="4.191" y2="-1.397" width="0.127" layer="21"/>
+<pad name="PWR" x="3.81" y="0" drill="1.27"/>
+<wire x1="-1.651" y1="-1.397" x2="5.461" y2="-1.397" width="0.127" layer="21"/>
 <text x="-2.2352" y="2.9718" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.2352" y="4.7498" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>

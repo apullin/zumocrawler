@@ -1,3 +1,8 @@
+*.pdf
+*.dxf
+*.zip
+board/zumy_carrier_v01/gerber/
+
 *.py[cod]
 
 # C extensions
